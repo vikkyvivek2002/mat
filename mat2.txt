@@ -1,0 +1,10 @@
+clc;
+clear all;
+close all;
+A= input('Amplitude=');
+f = input('frequency=');
+t=0:0.01:1;
+x=A*sin(2*pi*f*t);
+plot(t,x)
+xlabel('time');ylabel('amplitude');
+title('sine wave')
